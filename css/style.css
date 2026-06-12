@@ -265,8 +265,10 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
   flex-direction: column;
   gap: 4px;
 }
-.capability-cell:first-child {
-  padding-left: var(--gutter);
+@media (min-width: 920px) {
+  .capability-cell:first-child {
+    padding-left: var(--gutter);
+  }
 }
 .capability-title {
   font-size: 14.5px;
