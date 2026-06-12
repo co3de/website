@@ -39,15 +39,32 @@
       return;
     }
 
-    // TODO: POST to form backend (Formspree, Web3Forms, etc.)
-    // fetch('https://YOUR_ENDPOINT', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ name: name, email: email, company: companyField.value.trim(), message: message })
-    // }).then(...)
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
 
-    form.hidden = true;
-    success.hidden = false;
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        access_key: 'e2099520-2b88-43d9-8d4b-af654b4cd96e',
+        botcheck: document.getElementById('botcheck').value,
+        name: name,
+        email: email,
+        company: companyField.value.trim(),
+        message: message,
+        subject: 'New inquiry from ' + name
+      })
+    }).then(function (res) {
+      if (!res.ok) throw new Error('Failed');
+      form.hidden = true;
+      success.hidden = false;
+    }).catch(function () {
+      errorEl.textContent = 'Something went wrong — please try again or email us directly.';
+      errorEl.hidden = false;
+    }).finally(function () {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Request the free call';
+    });
   });
 
   resetBtn.addEventListener('click', function () {
