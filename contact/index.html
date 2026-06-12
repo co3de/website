@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Co3de</title>
+  <meta name="description" content="Start with a free 30-minute call. Tell us what you're stuck on and we'll reply within one business day.">
+  <link rel="canonical" href="https://co3de.com/contact">
+  <meta property="og:title" content="Contact — Co3de">
+  <meta property="og:description" content="Start with a free 30-minute call. Tell us what you're stuck on and we'll reply within one business day.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://co3de.com/contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-wordmark">co3de</a>
+    <div class="nav-links">
+      <a href="/services" class="nav-link">Services</a>
+      <a href="/about" class="nav-link">About</a>
+      <a href="/contact" class="nav-link active">Contact</a>
+      <a href="/contact" class="btn-pill btn-pill-sm btn-solid">Book a free call</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- BODY -->
+    <section class="contact-grid">
+
+      <!-- LEFT -->
+      <div class="contact-left">
+        <div class="eyebrow">Contact</div>
+        <h1>Start with a free half hour.</h1>
+        <p class="contact-intro">Tell us a little about what you're working on. We'll reply within one business day to set up the call — and we'll tell you honestly whether we're the right fit.</p>
+
+        <div class="contact-steps">
+          <div class="contact-step">
+            <span class="contact-step-num">1</span>
+            <div class="contact-step-text"><strong>Free 30-minute call</strong> — where you're stuck, and whether we can help.</div>
+          </div>
+          <div class="contact-step">
+            <span class="contact-step-num">2</span>
+            <div class="contact-step-text"><strong>Capped investigation</strong> — a short technical dive to map scope and risk.</div>
+          </div>
+          <div class="contact-step">
+            <span class="contact-step-num">3</span>
+            <div class="contact-step-text"><strong>Fixed-bid delivery</strong> — one scope, one price, no clock-watching.</div>
+          </div>
+        </div>
+
+        <div class="contact-email">
+          <canvas id="sphere-canvas" aria-label="Rotating wireframe sphere"></canvas>
+          <div class="contact-email-text">Prefer email?<br><a href="mailto:hello@co3de.com" class="contact-email-link">hello@co3de.com</a></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div>
+        <div id="contact-form" class="form-card">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="field-name">Name</label>
+              <input class="form-input" id="field-name" type="text" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="field-email">Work email</label>
+              <input class="form-input" id="field-email" type="email" placeholder="you@company.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="field-company">Company <span class="form-label-optional">(optional)</span></label>
+            <input class="form-input" id="field-company" type="text" placeholder="Company name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="field-message">What are you stuck on?</label>
+            <textarea class="form-textarea" id="field-message" rows="5" placeholder="A sentence or two is plenty — deadlines, systems involved, what's been tried…"></textarea>
+          </div>
+          <div id="form-error" class="form-error" hidden aria-live="polite"></div>
+          <button type="button" class="form-submit" id="form-submit">Request the free call</button>
+        </div>
+
+        <div id="contact-success" class="form-success" hidden>
+          <div class="form-success-icon">✓</div>
+          <h2>Thanks — message received.</h2>
+          <p>We'll get back to you within one business day to set up your free call.</p>
+          <button type="button" class="form-reset-link" id="form-reset">Send another message</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="footer-wordmark">co3de</span>
+      <span class="footer-copy">© Co3de LLC · California</span>
+    </div>
+    <div class="footer-links">
+      <a href="/services" class="footer-link">Services</a>
+      <a href="/about" class="footer-link">About</a>
+      <a href="/contact" class="footer-link">Contact</a>
+      <a href="/labs" class="footer-labs">labs ↗</a>
+    </div>
+  </footer>
+
+</div>
+<script src="/js/animations.js"></script>
+<script src="/js/contact-form.js"></script>
+<script>initSphere(document.getElementById('sphere-canvas'));</script>
+</body>
+</html>

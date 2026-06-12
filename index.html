@@ -1,57 +1,163 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>co3de</title>
-  <link rel="stylesheet" type="text/css" href="index.css" />
-
-  <script src="three.js/build/three.min.js"></script>
-  <script src="three.js/GeometryUtils.js"></script>
-
-  <script src="three.js/Detector.js"></script>
-  <script src="three.js/stats.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Co3de — Full-Stack Software Consultancy</title>
+  <meta name="description" content="Co3de LLC takes on hard problems in software: project rescue, delivery acceleration, AI-assisted workflows, and team training. Free 30-minute consultation.">
+  <link rel="canonical" href="https://co3de.com/">
+  <meta property="og:title" content="Co3de — Full-Stack Software Consultancy">
+  <meta property="og:description" content="Co3de LLC takes on hard problems in software: project rescue, delivery acceleration, AI-assisted workflows, and team training. Free 30-minute consultation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://co3de.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Co3de LLC",
+    "url": "https://co3de.com",
+    "email": "hello@co3de.com",
+    "areaServed": "US",
+    "address": { "@type": "PostalAddress", "addressRegion": "California", "addressCountry": "US" }
+  }
+  </script>
 </head>
-
 <body>
-  <div id="container" style="width:400px;height:200px;text-align: center;margin: auto;">
-  </div>
+<div class="page">
 
-<p>Software development is hard.  There need to be tools to make it easier.</p>
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-wordmark">co3de</a>
+    <div class="nav-links">
+      <a href="/services" class="nav-link">Services</a>
+      <a href="/about" class="nav-link">About</a>
+      <a href="/contact" class="nav-link">Contact</a>
+      <a href="/contact" class="btn-pill btn-pill-sm btn-solid">Book a free call</a>
+    </div>
+  </nav>
 
-<p>The rooms we work in have whiteboards filled with diagrams that help us visualize the software being built.
-But why can't those diagrams live in the computer, and build the actual software in the process?</p>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <div class="eyebrow">Full-stack consultancy · Hard problems welcome</div>
+        <h1>The projects that feel impossible, <em>handled.</em></h1>
+        <p class="hero-body">Co3de partners with teams facing compressed timelines and tangled systems — across the entire stack, from backend infrastructure to the pixel layer. We accelerate delivery, modernize your workflows, and leave your team stronger than we found it.</p>
+        <div class="hero-ctas">
+          <a href="/contact" class="btn-pill btn-solid">Book a free 30-minute call</a>
+          <a href="/services" class="btn-pill btn-outline">How we work</a>
+        </div>
+      </div>
+      <div class="hero-canvas">
+        <canvas id="hero-canvas" aria-label="Rotating wireframe icosahedron"></canvas>
+      </div>
+    </section>
 
-<p>I believe it's possible.  Not by inventing a new language that everyone has to learn, or making a new modeling tool,
-but by a different approach.</p>
+    <!-- CAPABILITY STRIP -->
+    <section class="capability-strip">
+      <div class="capability-cell">
+        <div class="capability-title">Delivery acceleration</div>
+        <div class="capability-caption">Months of progress in weeks</div>
+      </div>
+      <div class="capability-cell">
+        <div class="capability-title">Full-stack depth</div>
+        <div class="capability-caption">Backend systems to the pixel layer</div>
+      </div>
+      <div class="capability-cell">
+        <div class="capability-title">AI-assisted workflows</div>
+        <div class="capability-caption">Built around your codebase</div>
+      </div>
+      <div class="capability-cell">
+        <div class="capability-title">Team enablement</div>
+        <div class="capability-caption">We leave you better than we found you</div>
+      </div>
+    </section>
 
-<p>The idea is to layer a <i>new kind of visualization</i> on top of existing languages.
-Something that draws out all the "connections and effects" to let you see exactly what's going on at a glance.</p>
+    <!-- WHAT WE DO -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">What we do</h2>
+        <a href="/services" class="section-link">All services →</a>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-number">01</div>
+          <h3 class="card-title">Rescue &amp; acceleration</h3>
+          <p class="card-body">When the deadline is fixed and the estimate isn't, we close the gap — taking projects from "a year out" to shipped.</p>
+        </div>
+        <div class="card">
+          <div class="card-number">02</div>
+          <h3 class="card-title">Hard technical problems</h3>
+          <p class="card-body">The migration nobody wants to touch, the performance cliff, the bug nobody can reproduce — backend, frontend, or in between.</p>
+        </div>
+        <div class="card">
+          <div class="card-number">03</div>
+          <h3 class="card-title">Workflows &amp; training</h3>
+          <p class="card-body">AI-assisted development and fast end-to-end testing, set up for your stack — and your team trained to keep the speed.</p>
+        </div>
+      </div>
+    </section>
 
-<p>This approach will keep the diagram we draw in sync with the code at all times and let you work solely in the code or
-solely in the diagram.</p>
+    <!-- HOW WE WORK -->
+    <section class="section section-top">
+      <div class="how-section">
+        <h2 class="how-title">How we work</h2>
+        <p class="how-intro">Engagements are structured so you always know what you're buying — and you're never anxiously watching the clock.</p>
+      </div>
+      <div class="how-grid">
+        <div class="how-step">
+          <div class="how-step-header">
+            <span class="how-step-num">1</span>
+            <span class="how-step-name">Free 30-minute call</span>
+          </div>
+          <p class="how-step-body">We listen to where you're stuck and tell you honestly whether we can help. No commitment, ever.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step-header">
+            <span class="how-step-num">2</span>
+            <span class="how-step-name">Capped investigation</span>
+          </div>
+          <p class="how-step-body">A short technical dive into your systems, capped at a small number of hours, to map the real scope and risks.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step-header">
+            <span class="how-step-num">3</span>
+            <span class="how-step-name">Fixed-bid delivery</span>
+          </div>
+          <p class="how-step-body">A clear scope and a single price, with frequent demos of progress and what remains. No surprises.</p>
+        </div>
+      </div>
+    </section>
 
-<p>Think of how easy it is to navigate a map or arrange photos on an iPad.   I plan to bring the same sensibility to coding and
-code navigation.</p>
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <h2>Tell us what you're stuck on.</h2>
+      <p>The first half hour is free, and you'll leave the call with a clearer picture either way.</p>
+      <a href="/contact" class="btn-pill btn-light" style="margin-top: 8px">Book the free call</a>
+    </section>
+  </main>
 
-<p>But better usability and good visualizations aren't solely what makes the iPad so popular, it's when people can communicate
-easily that great things become possible, so part of this vision is collaboration tools that will let
-developers work with each other, with testers, and with product owners, in more direct ways.</p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="footer-wordmark">co3de</span>
+      <span class="footer-copy">© Co3de LLC · California</span>
+    </div>
+    <div class="footer-links">
+      <a href="/services" class="footer-link">Services</a>
+      <a href="/about" class="footer-link">About</a>
+      <a href="/contact" class="footer-link">Contact</a>
+      <a href="/labs" class="footer-labs">labs ↗</a>
+    </div>
+  </footer>
 
-<p>Some keys to this product are:</p>
-
-<ul>
-<li><b>Visibility</b> <p> It will show you everything that matters as you write and debug software so you're never confused about
-               what's going on or what just happened.</p>
-
-<li><b>Repeatability</b> <p> It will allow you to re-play almost anything so you aren't left with that sinking feeling of "oh,
-                  that last change worked better than this one... now what did I do again?"</p>
-
-<li><b>Automatability</b> <p> It will automate what it can, so that you're spending less time doing "busy work",
-                  and more time building great software.</p>
-</ul>
-
-<p>&copy; co3de LLC</p>
-<script src="code.js"></script>
-
+</div>
+<script src="/js/animations.js"></script>
+<script>initIcosahedron(document.getElementById('hero-canvas'));</script>
 </body>
-
 </html>
