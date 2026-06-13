@@ -46,7 +46,7 @@
     <section class="hero">
       <div class="hero-text">
         <div class="eyebrow">Full-stack consultancy · Hard problems welcome</div>
-        <h1>The projects that feel impossible, <em>handled.</em></h1>
+        <h1>The projects that feel impossible, <em id="hero-typed" aria-label="handled."></em><span class="hero-cursor" id="hero-cursor"></span></h1>
         <p class="hero-body">Co3de partners with teams facing compressed timelines and tangled systems — across the entire stack, from backend infrastructure to the pixel layer. We accelerate delivery, modernize your workflows, and leave your team stronger than we found it.</p>
         <div class="hero-ctas">
           <a href="/contact" class="btn-pill btn-solid">Book a free 30-minute call</a>
@@ -158,6 +158,29 @@
 
 </div>
 <script src="/js/animations.js"></script>
-<script>initIcosahedron(document.getElementById('hero-canvas'));</script>
+<script>
+initIcosahedron(document.getElementById('hero-canvas'));
+(function () {
+  var el = document.getElementById('hero-typed');
+  var cursor = document.getElementById('hero-cursor');
+  var text = 'handled.';
+  var i = 0;
+  var delay = 600;
+  var speed = 115;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    el.textContent = text;
+    cursor.style.display = 'none';
+    return;
+  }
+  setTimeout(function type() {
+    el.textContent = text.slice(0, ++i);
+    if (i < text.length) {
+      setTimeout(type, speed);
+    } else {
+      cursor.style.display = 'none';
+    }
+  }, delay);
+})();
+</script>
 </body>
 </html>
