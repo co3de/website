@@ -69,7 +69,7 @@
       var b = proj[model.edges[e][1]];
       var depth = (a[2] + b[2]) / 2;
       var alpha = 0.16 + 0.5 * ((depth + 1.1) / 2.2);
-      s.ctx.strokeStyle = 'rgba(26,24,22,' + alpha.toFixed(3) + ')';
+      s.ctx.strokeStyle = 'rgba(90,76,190,' + alpha.toFixed(3) + ')';
       s.ctx.beginPath();
       s.ctx.moveTo(a[0], a[1]);
       s.ctx.lineTo(b[0], b[1]);
@@ -78,7 +78,7 @@
     for (var i = 0; i < proj.length; i++) {
       var q = proj[i];
       var a2 = 0.3 + 0.6 * ((q[2] + 1.1) / 2.2);
-      s.ctx.fillStyle = 'rgba(26,24,22,' + a2.toFixed(3) + ')';
+      s.ctx.fillStyle = 'rgba(90,76,190,' + a2.toFixed(3) + ')';
       s.ctx.beginPath();
       s.ctx.arc(q[0], q[1], 3.2, 0, Math.PI * 2);
       s.ctx.fill();

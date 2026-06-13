@@ -15,6 +15,10 @@ html, body { margin: 0; padding: 0; background: var(--paper); }
   --bronze: #9A7142;
   --bronze: oklch(0.55 0.09 60);
   --bronze-hover: oklch(0.5 0.09 60);
+  --indigo: oklch(0.45 0.15 280);
+  --indigo-hover: oklch(0.39 0.14 280);
+  --indigo-band: oklch(0.29 0.10 280);
+  --indigo-band-muted: oklch(0.74 0.045 280);
   --btn-hover: #3B362E;
   --btn-light-hover: #E5E0D6;
   --tinted-bg: #F3EFE6;
@@ -92,10 +96,10 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
   font-size: 13.5px;
 }
 .btn-solid {
-  background: var(--ink);
+  background: var(--indigo);
   color: var(--paper);
 }
-.btn-solid:hover { background: var(--btn-hover); }
+.btn-solid:hover { background: var(--indigo-hover); }
 .btn-outline {
   border: 1px solid var(--border-hover);
   color: var(--ink);
@@ -104,7 +108,7 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
 .btn-outline:hover { border-color: var(--ink); }
 .btn-light {
   background: var(--paper);
-  color: var(--ink);
+  color: var(--indigo-band);
 }
 .btn-light:hover { background: var(--btn-light-hover); }
 
@@ -163,7 +167,7 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
 
 /* ---- CTA BAND ---- */
 .cta-band {
-  background: var(--ink);
+  background: var(--indigo-band);
   color: var(--paper);
   padding: clamp(56px, 8vw, 88px) var(--gutter);
   display: flex;
@@ -185,7 +189,7 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
 .cta-band p {
   font-size: 16px;
   line-height: 1.65;
-  color: var(--dark-muted);
+  color: var(--indigo-band-muted);
   max-width: 480px;
   text-wrap: pretty;
   margin: 0;
@@ -223,6 +227,7 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
 .hero h1 em {
   font-style: italic;
   font-weight: 400;
+  color: var(--indigo);
 }
 .hero-body {
   font-size: 17px;
@@ -388,7 +393,7 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
   font-family: var(--font-serif);
   font-size: 30px;
   font-weight: 500;
-  color: var(--bronze);
+  color: var(--indigo);
 }
 .how-step-name {
   font-size: 16px;
@@ -513,7 +518,7 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
   font-family: var(--font-serif);
   font-size: 30px;
   font-weight: 500;
-  color: var(--bronze);
+  color: var(--indigo);
 }
 .engagement-card-tag {
   font-family: var(--font-mono);
@@ -759,7 +764,7 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
   font-family: var(--font-serif);
   font-size: 22px;
   font-weight: 500;
-  color: var(--bronze);
+  color: var(--indigo);
   min-width: 24px;
 }
 .contact-step-text {
@@ -852,7 +857,7 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
 }
 .form-submit {
   font-family: var(--font-sans);
-  background: var(--ink);
+  background: var(--indigo);
   color: var(--paper);
   padding: 16px 28px;
   border-radius: 999px;
@@ -863,7 +868,7 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
   align-self: flex-start;
   transition: background 150ms ease;
 }
-.form-submit:hover { background: var(--btn-hover); }
+.form-submit:hover { background: var(--indigo-hover); }
 
 /* Success state */
 .form-success {
@@ -882,7 +887,7 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--bronze);
+  background: var(--indigo);
   color: var(--paper);
   display: flex;
   align-items: center;
