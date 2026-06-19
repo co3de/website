@@ -236,12 +236,7 @@ a { transition: color 150ms ease, background 150ms ease, border-color 150ms ease
   background: var(--indigo);
   margin-left: 2px;
   vertical-align: baseline;
-  animation: blink 0.6s steps(1) infinite;
-}
-.hero-cursor.done {
-  animation: blink 0.6s steps(1) forwards;
-  animation-iteration-count: 3;
-  animation-fill-mode: forwards;
+  animation: blink 1s steps(1) infinite;
 }
 @keyframes blink {
   0%, 100% { opacity: 1; }

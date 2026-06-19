@@ -47,7 +47,7 @@
       <div class="hero-text">
         <div class="eyebrow">Full-stack consultancy · Hard problems welcome</div>
         <h1>The projects that feel impossible, <em id="hero-typed" aria-label="handled."></em><span class="hero-cursor" id="hero-cursor"></span></h1>
-        <p class="hero-body">Co3de partners with teams facing compressed timelines and tangled systems — across the entire stack, from backend infrastructure to the pixel layer. We accelerate delivery, modernize your workflows, and leave your team stronger than we found it.</p>
+        <p class="hero-body">Co3de partners with teams facing compressed timelines and tangled systems — across the stack and across team lines. We accelerate delivery, find the problems nobody owns, and leave your team stronger than we found it.</p>
         <div class="hero-ctas">
           <a href="/contact" class="btn-pill btn-solid">Book a free 30-minute call</a>
           <a href="/services" class="btn-pill btn-outline">How we work</a>
@@ -73,6 +73,10 @@
         <div class="capability-caption">Built around your codebase</div>
       </div>
       <div class="capability-cell">
+        <div class="capability-title">Cross-team clarity</div>
+        <div class="capability-caption">The problem nobody owns, found and fixed</div>
+      </div>
+      <div class="capability-cell">
         <div class="capability-title">Team enablement</div>
         <div class="capability-caption">We leave you better than we found you</div>
       </div>
@@ -93,7 +97,7 @@
         <div class="card">
           <div class="card-number">02</div>
           <h3 class="card-title">Hard technical problems</h3>
-          <p class="card-body">The migration nobody wants to touch, the performance cliff, the bug nobody can reproduce — backend, frontend, or in between.</p>
+          <p class="card-body">The migration nobody wants to touch, the performance cliff, the issue three teams all say belongs to someone else. We listen to every side, trace the real path, and fix it where it actually lives.</p>
         </div>
         <div class="card">
           <div class="card-number">03</div>
@@ -165,8 +169,8 @@ initIcosahedron(document.getElementById('hero-canvas'));
   var cursor = document.getElementById('hero-cursor');
   var text = 'handled.';
   var i = 0;
-  var delay = 600;
-  var speed = 115;
+  var delay = 1500;
+  var speed = 200;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     el.textContent = text;
     cursor.style.display = 'none';
